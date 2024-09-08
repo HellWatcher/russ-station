@@ -51,7 +51,7 @@
 	var/natural_spawn = TRUE
 
 /datum/sprite_accessory/blank
-	name = "None"
+	name = SPRITE_ACCESSORY_NONE
 	icon_state = "None"
 
 //////////////////////
@@ -835,7 +835,7 @@
 	var/gradient_category = GRADIENT_APPLIES_TO_HAIR|GRADIENT_APPLIES_TO_FACIAL_HAIR
 
 /datum/sprite_accessory/gradient/none
-	name = "None"
+	name = SPRITE_ACCESSORY_NONE
 	icon_state = "none"
 
 /datum/sprite_accessory/gradient/full
@@ -1726,10 +1726,6 @@
 /datum/sprite_accessory/lizard_markings
 	icon = 'icons/mob/human/species/lizard/lizard_markings.dmi'
 
-/datum/sprite_accessory/lizard_markings/none
-	name = "None"
-	icon_state = "none"
-
 /datum/sprite_accessory/lizard_markings/dtiger
 	name = "Dark Tiger Body"
 	icon_state = "dtiger"
@@ -1753,6 +1749,11 @@
 /datum/sprite_accessory/tails/lizard
 	icon = 'icons/mob/human/species/lizard/lizard_tails.dmi'
 	spine_key = SPINE_KEY_LIZARD
+
+/datum/sprite_accessory/tails/lizard/none
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+	natural_spawn = FALSE
 
 /datum/sprite_accessory/tails/lizard/smooth
 	name = "Smooth"
@@ -1780,6 +1781,13 @@
 	icon = 'icons/mob/human/cat_features.dmi'
 	icon_state = "default"
 	color_src = HAIR_COLOR
+
+/datum/sprite_accessory/tails/monkey
+
+/datum/sprite_accessory/tails/monkey/none
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+	natural_spawn = FALSE
 
 /datum/sprite_accessory/tails/monkey/default
 	name = "Monkey"
@@ -1855,10 +1863,6 @@
 	icon = 'icons/mob/human/species/lizard/lizard_misc.dmi'
 	em_block = TRUE
 
-/datum/sprite_accessory/horns/none
-	name = "None"
-	icon_state = "none"
-
 /datum/sprite_accessory/horns/simple
 	name = "Simple"
 	icon_state = "simple"
@@ -1882,10 +1886,6 @@
 /datum/sprite_accessory/ears
 	icon = 'icons/mob/human/cat_features.dmi'
 	em_block = TRUE
-
-/datum/sprite_accessory/ears/none
-	name = "None"
-	icon_state = "none"
 
 /datum/sprite_accessory/ears/cat
 	name = "Cat"
@@ -1920,10 +1920,6 @@
 	hasinner = TRUE
 	color_src = HAIR_COLOR
 	locked = TRUE
-
-/datum/sprite_accessory/wings/none
-	name = "None"
-	icon_state = "none"
 
 /datum/sprite_accessory/wings
 	icon = 'icons/mob/human/species/wings.dmi'
@@ -2068,10 +2064,6 @@
 /datum/sprite_accessory/frills
 	icon = 'icons/mob/human/species/lizard/lizard_misc.dmi'
 
-/datum/sprite_accessory/frills/none
-	name = "None"
-	icon_state = "none"
-
 /datum/sprite_accessory/frills/simple
 	name = "Simple"
 	icon_state = "simple"
@@ -2091,14 +2083,6 @@
 /datum/sprite_accessory/tail_spines
 	icon = 'icons/mob/human/species/lizard/lizard_spines.dmi'
 	em_block = TRUE
-
-/datum/sprite_accessory/spines/none
-	name = "None"
-	icon_state = "none"
-
-/datum/sprite_accessory/tail_spines/none
-	name = "None"
-	icon_state = "none"
 
 /datum/sprite_accessory/spines/short
 	name = "Short"
@@ -2360,10 +2344,6 @@
 	icon = 'icons/mob/human/species/moth/moth_markings.dmi'
 	color_src = null
 
-/datum/sprite_accessory/moth_markings/none
-	name = "None"
-	icon_state = "none"
-
 /datum/sprite_accessory/moth_markings/reddish
 	name = "Reddish"
 	icon_state = "reddish"
@@ -2420,6 +2400,150 @@
 	name = "Witch Wing"
 	icon_state = "witchwing"
 
+/*
+	BIG ASS HONK IN HOPES THIS FORCES A CONFLICT
+*/
+
 /datum/sprite_accessory/moth_markings/lightbearer
 	name = "Lightbearer"
 	icon_state = "lightbearer"
+
+
+/*
+	BIG ASS HONK IN HOPES THIS FORCES A CONFLICT
+	SOME WINGS OF OUR WINGS MIGHT BE ADD TO UPSTREAM AND WE NEED TO REMOVE THEM FROM OUR FOLDER
+*/
+
+
+// honk start - marks
+/datum/sprite_accessory/moth_markings/poly
+    name = "Poly"
+    icon_state = "poly"
+
+/datum/sprite_accessory/moth_markings/lunar
+    name = "Lunar"
+    icon_state = "lunar"
+
+/datum/sprite_accessory/moth_markings/banana
+    name = "Banana"
+    icon_state = "banana"
+
+/datum/sprite_accessory/moth_markings/hornet
+    name = "Hornet"
+    icon_state = "hornet"
+
+// honk end - marks
+// honk start - antennae
+/datum/sprite_accessory/moth_antennae/poly
+    name = "Poly"
+    icon_state = "poly"
+
+/datum/sprite_accessory/moth_antennae/hornet
+    name = "Hornet"
+    icon_state = "hornet"
+
+/datum/sprite_accessory/moth_antennae/lunardot
+    name = "Lunardot"
+    icon_state = "lunardot"
+
+/datum/sprite_accessory/moth_antennae/banana
+    name = "Banana"
+    icon_state = "banana"
+
+/datum/sprite_accessory/moth_antennae/leaf
+    name = "Leaf"
+    icon_state = "leaf"
+
+/datum/sprite_accessory/moth_antennae/arge
+    name = "Arge"
+    icon_state = "arge"
+
+/datum/sprite_accessory/moth_antennae/carriola
+    name = "Carriola"
+    icon_state = "carriola"
+
+/datum/sprite_accessory/moth_antennae/pompelon
+    name = "Pompelon"
+    icon_state = "pompelon"
+
+/datum/sprite_accessory/moth_antennae/scarletwasp
+    name = "Scarletwasp"
+    icon_state = "scarletwasp"
+
+/datum/sprite_accessory/moth_antennae/bella
+    name = "Bella"
+    icon_state = "bella"
+
+/datum/sprite_accessory/moth_antennae/spanishmoon
+    name = "Spanishmoon"
+    icon_state = "spanishmoon"
+
+/datum/sprite_accessory/moth_antennae/spanish
+    name = "Spanish"
+    icon_state = "spanish"
+
+/datum/sprite_accessory/moth_antennae/tiger
+    name = "Tiger"
+    icon_state = "tiger"
+
+/datum/sprite_accessory/moth_antennae/lunar
+    name = "Lunar"
+    icon_state = "lunar"
+// honk end - antennae
+// honk start - wings
+/datum/sprite_accessory/moth_wings/tiger
+    name = "Tiger"
+    icon_state = "tiger"
+
+/datum/sprite_accessory/moth_wings/lunar
+    name = "Lunar"
+    icon_state = "lunar"
+
+/datum/sprite_accessory/moth_wings/lunardot
+    name = "Lunardot"
+    icon_state = "lunardot"
+
+/datum/sprite_accessory/moth_wings/spanish
+    name = "Spanish"
+    icon_state = "spanish"
+
+/datum/sprite_accessory/moth_wings/spanishmoon
+    name = "Spanishmoon"
+    icon_state = "spanishmoon"
+
+/datum/sprite_accessory/moth_wings/bella
+    name = "Bella"
+    icon_state = "bella"
+
+/datum/sprite_accessory/moth_wings/scarletwasp
+    name = "Scarletwasp"
+    icon_state = "scarletwasp"
+
+/datum/sprite_accessory/moth_wings/hornet
+    name = "Hornet"
+    icon_state = "hornet"
+
+/datum/sprite_accessory/moth_wings/poly
+    name = "Poly"
+    icon_state = "poly"
+
+/datum/sprite_accessory/moth_wings/banana
+    name = "Banana"
+    icon_state = "banana"
+
+/datum/sprite_accessory/moth_wings/leaf
+    name = "Leaf"
+    icon_state = "leaf"
+
+/datum/sprite_accessory/moth_wings/arge
+    name = "Arge"
+    icon_state = "arge"
+
+/datum/sprite_accessory/moth_wings/carriola
+    name = "Carriola"
+    icon_state = "carriola"
+
+/datum/sprite_accessory/moth_wings/pompelon
+    name = "Pompelon"
+    icon_state = "pompelon"
+
