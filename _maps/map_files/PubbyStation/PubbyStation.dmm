@@ -19651,7 +19651,7 @@
 /obj/structure/closet/crate/freezer/food,
 /obj/item/reagent_containers/chem_pack,
 /obj/item/reagent_containers/chem_pack,
-/obj/item/organ/internal/heart,
+/obj/item/organ/heart,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
 "bua" = (
@@ -45545,11 +45545,11 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "vgR" = (
-/obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Dock Airlock"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "vhb" = (
