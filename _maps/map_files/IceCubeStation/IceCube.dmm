@@ -17399,11 +17399,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "ide" = (
-/obj/machinery/computer/security/telescreen/entertainment/directional/north,
-/obj/machinery/camera/directional/north{
-	c_tag = "Bar North";
-	network = list("ss13","bar")
-	},
+/obj/machinery/gacha/plush,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "idg" = (
@@ -27905,6 +27901,10 @@
 /area/station/service/theater/abandoned)
 "mPr" = (
 /obj/item/radio/intercom/directional/north,
+/obj/machinery/camera/directional/north{
+	c_tag = "Bar North";
+	network = list("ss13","bar")
+	},
 /turf/open/floor/wood,
 /area/station/service/bar)
 "mPv" = (
@@ -37117,6 +37117,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/machinery/computer/security/telescreen/entertainment/directional/east,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "rfB" = (
