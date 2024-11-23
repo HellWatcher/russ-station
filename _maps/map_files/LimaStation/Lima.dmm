@@ -28671,6 +28671,10 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
 /area/station/service/hydroponics/garden)
+"nFe" = (
+/obj/machinery/gacha/plush,
+/turf/open/floor/stone,
+/area/station/service/bar)
 "nFk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 9
@@ -79828,7 +79832,7 @@ vRL
 smo
 gWJ
 vVO
-gTv
+nFe
 gTv
 nVG
 nVG
