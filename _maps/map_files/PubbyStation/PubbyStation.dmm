@@ -27120,6 +27120,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/gacha/plush,
 /turf/open/floor/iron/dark,
 /area/station/service/bar)
 "bXu" = (
